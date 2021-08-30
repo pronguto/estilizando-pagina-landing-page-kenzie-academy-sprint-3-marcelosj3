@@ -60,10 +60,22 @@ div.container{
 /* GERAL */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --color-primary: #FFF;
+    --color-primary-light: #007aff;
+    --color-primary-dark: #00043e;
+    --color-secondary: #303030;
+    --color-secondary-light: #818181;
+}
 
 /****** CONTENT ******/
-body {}
+body {
+    font-family: 'Lato';
+}
+
+h2 {
+    font-family: 'Montserrat'
+}
 
 /****** CABEÇALHO ******/
 .topo {}
@@ -75,6 +87,9 @@ div.large-container {}
 .topo__caption {}
 
 /* MENU DE NAVEGAÇÃO */
+.topo__nav-mobile {}
+.nav-mobile__image {}
+
 .topo__nav {}
 .topo__list {}
 .topo__item {}
