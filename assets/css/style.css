@@ -74,23 +74,41 @@ body {
 }
 
 h2 {
-    font-family: 'Montserrat'
+    font-family: 'Montserrat';
 }
-
+                                           img {width: 10px;}
 /****** CABEÇALHO ******/
-.topo {}
-div.large-container {}
+.topo {
+    background-color: var(--color-primary-dark);
+    padding: 20px;
+}
+div.large-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* LOGO */
 .topo__figure {}
-.topo__image {}
-.topo__caption {}
+.topo__image {
+    width: 60px;
+}
+.topo__caption {
+    display: none;
+}
 
 /* MENU DE NAVEGAÇÃO */
 .topo__nav-mobile {}
-.nav-mobile__image {}
+.nav-mobile__image {
+    cursor: pointer;
+    width: 25px;
+}
 
-.topo__nav {}
+.topo__nav {
+    display: none;
+}
 .topo__list {}
 .topo__item {}
 .topo__link {}
@@ -99,17 +117,51 @@ div.large-container {}
 .inicial {}
 
 /*** ÁREA DE DESTAQUE ***/
-.secao-destaque {}
-.secao-destaque__title {}
-.secao-destaque__paragraph {}
+.secao-destaque {
+    color: var(--color-primary);
+    background-color: var(--color-primary-dark);
+    padding: 0 20px 150px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+.secao-destaque__title {
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+.secao-destaque__paragraph {
+    font-family: 'Montserrat';
+    font-size: 21px;
+    margin: 20px 0;
+}
 
 /* FORMULÁRIO */
-.secao-destaque__form {}
-.secao-destaque__input {}
-.secao-destaque__button {}
+.secao-destaque__form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.secao-destaque__input {
+    width: 100%;
+    font-family: 'Montserrat';
+    border: none;
+    outline: 0;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+}
+.secao-destaque__button {
+    font-family: 'Montserrat';
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+    border-radius: 0 4px 4px 0;
+    font-size: 14px;
+}
 
 /*** SEÇÃO SOBRE ***/
-.secao-sobre {}
+.secao-sobre {width: 10px;}
 .secao-sobre__article {}
 
 /* COLUNA ESQUERDA */
@@ -129,7 +181,7 @@ div.large-container {}
 .secao-sobre__item {}
 
 /*** SEÇÃO CURSOS ***/
-.secao-cursos {}
+.secao-cursos {width: 10px;}
 .secao-cursos__article {}
 .secao-cursos__title {}
 .secao-cursos__paragraph {}
