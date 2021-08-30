@@ -71,12 +71,13 @@ div.container{
 /****** CONTENT ******/
 body {
     font-family: 'Lato';
+    color: var(--color-secondary-light);
 }
 
 h2 {
     font-family: 'Montserrat';
 }
-                                           img {width: 10px;}
+                                                            img {width: 10px;}
 /****** CABEÇALHO ******/
 .topo {
     background-color: var(--color-primary-dark);
@@ -124,6 +125,7 @@ div.large-container {
     display: grid;
     justify-items: center;
     text-align: center;
+    margin-bottom: 100px;
 }
 .secao-destaque__title {
     font-weight: 400;
@@ -161,27 +163,88 @@ div.large-container {
 }
 
 /*** SEÇÃO SOBRE ***/
-.secao-sobre {width: 10px;}
+.secao-sobre {}
 .secao-sobre__article {}
 
 /* COLUNA ESQUERDA */
-.secao-sobre__column {}
-.secao-sobre__title {}
-.secao-sobre__paragraph {}
-.secao-sobre__span {}
-.secao-sobre__button {}
+.secao-sobre__column {
+    padding: 0 50px 0;
+}
+.secao-sobre__column--center-image {
+    display: flex;
+    justify-content: center;
+}
+.secao-sobre__column--padding-1 {
+    margin: 0;
+    padding: 50px 50px 75px;
+}
+.secao-sobre__column--padding-2 {
+    margin: 0;
+    padding: 75px 50px 15px;
+}
+.secao-sobre__column--background {
+    background-color: #F6F6F6;
+}
+.secao-sobre__title {
+    color: var(--color-secondary);
+    font-size: 24px;
+    margin-bottom: 100px;
+    font-weight: 600;
+}
+.secao-sobre__title--center-bolder {
+    text-align: center;
+    font-weight: 700;
+}
+.secao-sobre__paragraph {
+    color: var(--color-secondary);
+    font-size: 19px;
+    margin-bottom: 50px;
+}
+.secao-sobre__span {
+    display: block;
+    margin-bottom: 50px;
+}
+.secao-sobre__button {
+    width: 100%;
+    font-family: 'Lato';
+    font-size: 19px;
+    color: var(--color-secondary);
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid var(--color-secondary-light);
+    outline: 0;
+    padding: 15px;
+}
 
 /* COLUNA DIREITA E PRÓXIMA ESQUERDA*/
-.secao-sobre__figure {}
-.secao-sobre__image {}
-.secao-sobre__caption {}
+.secao-sobre__figure {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+}
+.secao-sobre__image {
+    width: 100%;
+    object-fit: cover;
+}
+.secao-sobre__caption {
+    display: none;
+}
 
 /* COLUNA DIREITA */
-.secao-sobre__list {}
-.secao-sobre__item {}
+.secao-sobre__list {
+    list-style-type: disc;
+    padding: 0 20px 50px;
+}
+.secao-sobre__item {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+}
 
 /*** SEÇÃO CURSOS ***/
-.secao-cursos {width: 10px;}
+.secao-cursos {}
 .secao-cursos__article {}
 .secao-cursos__title {}
 .secao-cursos__paragraph {}
