@@ -302,12 +302,15 @@ div.large-container {
 }
 
 @media screen and (min-width: 1000px) {
-    .topo__nav-mobile {
-        display: none;
-    }
+    /****** CABEÇALHO ******/
     div.large-container {
         align-items: center;
         justify-content: space-around;
+    }
+
+    /* MENU DE NAVEGAÇÃO */
+    .topo__nav-mobile {
+        display: none;
     }
     .topo__nav {
         display: block;
@@ -325,10 +328,70 @@ div.large-container {
         text-decoration: none;
         color: var(--color-primary);
     }
+    /****** PÁGINA INICIAL ******/
+
+    /*** ÁREA DE DESTAQUE ***/
     .secao-destaque {
         background-image: url(../img/background-destaque.webp);
         background-size: cover;
         background-position: right;
         padding: 150px;
+    }
+    .secao-destaque__title {
+        font-size: 63px;
+    }
+    
+    /* FORMULÁRIO */
+    .secao-destaque__form {
+        width: 50%;
+    }
+    
+    /*** SEÇÃO SOBRE ***/
+
+    .secao-sobre__article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .secao-sobre__column {
+        width: 40%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0;
+    }
+    .secao-sobre__column--center-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .secao-sobre__column--padding-1,
+    .secao-sobre__column--padding-2 {
+        margin: 0;
+        padding: 0;
+    }
+    .secao-sobre__column--background::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #F6F6F6;
+        transform: scaleX(2);
+        z-index: -1;
+    }
+    .secao-sobre__button {
+        width: auto;
+        align-self: start;
+    }
+    .secao-sobre__figure {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
     }
 }
