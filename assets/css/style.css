@@ -146,20 +146,44 @@ div.large-container {
 .secao-destaque__input {
     width: 100%;
     font-family: 'Montserrat';
-    border: none;
+    border: 1px solid transparent;
     outline: 0;
     padding: 10px;
     border-radius: 4px 0 0 4px;
+    transition: .3s all;
+    box-sizing: border-box;
+}
+.secao-destaque__input:focus {
+    color: var(--color-primary);
+    background-color: var(--color-primary-light);
+    border: 1px solid var(--color-primary);
+    border-right: none;
+}
+.secao-destaque__input:focus ~ .secao-destaque__button {
+    color: var(--color-secondary-light);
+    background-color: var(--color-primary);
+}
+.secao-destaque__input:focus::-webkit-input-placeholder {
+    color: var(--color-primary);
 }
 .secao-destaque__button {
     font-family: 'Montserrat';
     font-size: 14px;
-    border: none;
+    border: 1px solid transparent;
     outline: 0;
     padding: 10px;
     color: var(--color-primary);
     background-color: var(--color-primary-light);
     border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: .3s all;
+    box-sizing: border-box;
+}
+.secao-destaque__form .secao-destaque__button:hover {
+    color: var(--color-primary);
+    background-color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary);
+    border-left: none;
 }
 
 /*** SEÇÃO SOBRE ***/
@@ -217,6 +241,14 @@ div.large-container {
     border: 1px solid var(--color-secondary-light);
     outline: 0;
     padding: 15px;
+    cursor: pointer;
+    transition: .3s all;
+}
+.secao-sobre__button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary);
 }
 
 /* COLUNA DIREITA E PRÓXIMA ESQUERDA*/
@@ -330,6 +362,18 @@ div.large-container {
         letter-spacing: 3px;
         text-decoration: none;
         color: var(--color-primary);
+        transition: .3s all;
+    }
+    .topo__link::after {
+        display: block;
+        content: '';
+        border-bottom: solid 1px var(--color-primary);
+        transform: scaleX(0);
+        transition: .3s all;
+    }
+    .topo__link:hover::after {
+        transform: scaleX(1);
+        transform-origin: center;
     }
     /****** PÁGINA INICIAL ******/
 
