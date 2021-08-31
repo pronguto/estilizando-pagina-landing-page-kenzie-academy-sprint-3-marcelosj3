@@ -161,7 +161,7 @@ main{}
                     font-size: 15px;
                     color: var(--color-secondary-light) ;
                     width: 200px;
-                    line-height: 23px;
+                    line-height: 25px;
                 }
                 div.calendario__data__rodape{
                     border-top: 1px solid var(--color-secondary-light);
@@ -211,7 +211,42 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 1000px) {
+        section.secaoCalendar ul.calendario{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 650px;
+            width: 1000px;
+            justify-content: space-between ;
+        }
+        section.secaoCalendar ul.calendario li{
+            border: 1px solid var(--color-primary-dark);
+            width: 320px;
+            height: 560px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        section.secaoCalendar ul.calendario li p.calendario__text{
+            font-family: var(--font-title_and_text);
+            font-size: 15px;
+            color: var(--color-secondary-light) ;
+            width: 290px;
+            line-height: 25px;
+        }
+        button.calendario__data__rodape__button{
+            font-family: var(--font-title_and_text);
+            font-size: 32px;
+            width: 150px;
+            height: 50px;
+            box-sizing: border-box;
+            border: none;
+            background-color: var(--color-primary-light);
+            color: var(--color-primary);
+            border-radius: 7px;
+            margin: 18px;
+        } 
+    }
 /* MEDIA QUERIES */
