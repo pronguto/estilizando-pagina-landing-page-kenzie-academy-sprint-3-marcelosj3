@@ -327,7 +327,7 @@ div.large-container {
     .topo__link {
         font-family: 'Montserrat';
         font-size: 13px;
-        letter-spacing: 1px;
+        letter-spacing: 3px;
         text-decoration: none;
         color: var(--color-primary);
     }
@@ -361,10 +361,11 @@ div.large-container {
         height: 600px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: space-between;
         position: relative;
-        padding: 0;
+        padding: 100px 0;
+        text-align: left;
     }
     .secao-sobre__column--center-image {
         display: flex;
@@ -389,14 +390,15 @@ div.large-container {
     }
     .secao-sobre__title {
         font-size: 24px;
+        margin-bottom: 100px;
     }
     .secao-sobre__button {
         width: auto;
         align-self: start;
     }
     .secao-sobre__figure {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         display: flex;
         justify-content: center;
     }
@@ -418,8 +420,18 @@ div.large-container {
     .secao-cursos__item {
         margin-bottom: 50px;
     }
+    .secao-cursos__item--start {
+        justify-self: start;
+    }
+    .secao-cursos__item--end {
+        justify-self: end;
+    }
     .secao-cursos__figure {}
     .secao-cursos__image {}
-    .secao-cursos__item-title {}
-    .secao-cursos__item-paragraph {}
+    .secao-cursos__item-title {
+        font-size: 15px;
+    }
+    .secao-cursos__item-paragraph {
+        font-size: 15px;
+    }
 }
