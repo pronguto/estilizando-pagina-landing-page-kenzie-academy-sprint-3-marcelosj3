@@ -394,4 +394,26 @@ div.large-container {
         display: flex;
         justify-content: center;
     }
+
+    /*** SEÇÃO CURSOS ***/
+    .secao-cursos {}
+    .secao-cursos__article {}
+    .secao-cursos__title {
+        font-size: 19px;
+    }
+    .secao-cursos__paragraph {}
+
+    /* LISTA DE CURSOS */
+    .secao-cursos__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .secao-cursos__item {
+        margin-bottom: 50px;
+    }
+    .secao-cursos__figure {}
+    .secao-cursos__image {}
+    .secao-cursos__item-title {}
+    .secao-cursos__item-paragraph {}
 }
