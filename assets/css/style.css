@@ -300,3 +300,35 @@ div.large-container {
     font-family: 'Lato';
     line-height: 25px;
 }
+
+@media screen and (min-width: 1000px) {
+    .topo__nav-mobile {
+        display: none;
+    }
+    div.large-container {
+        align-items: center;
+        justify-content: space-around;
+    }
+    .topo__nav {
+        display: block;
+    }
+    .topo__list {
+        display: flex;
+    }
+    .topo__item {
+        margin-left: 20px;
+    }
+    .topo__link {
+        font-family: 'Montserrat';
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: var(--color-primary);
+    }
+    .secao-destaque {
+        background-image: url(../img/background-destaque.webp);
+        background-size: cover;
+        background-position: right;
+        padding: 150px;
+    }
+}
