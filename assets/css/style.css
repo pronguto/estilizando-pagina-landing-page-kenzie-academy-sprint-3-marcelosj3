@@ -29,7 +29,14 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --color-primary: #FFF;
+    --color-primary-light: #007aff;
+    --color-primary-dark: #00043e;
+    --color-secondary: #303030;
+    --color-secondary-light: #818181;
+    --font-title_and_text: 'Lato', sans-serif;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -89,53 +96,29 @@ main{}
     /* SEÇÃO CURSOS */
     section.secaoCursos{}
 
-        /* LISTA DE CURSOS */
-        section.secaoCursos ul{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 2260px;
-            justify-content: space-between;
-            text-align: center;
-            color: #303030;
-        }
-            section.secaoCursos ul li{}
-
-            /* MINHA PARTE */
-            section.secaoCursos ul li.secaoCursos__items{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                height: 275px;
-                justify-content: space-between;
-            }
-            section.secaoCursos ul li.secaoCursos__items img.secaoCursos__img{
-                height: 150px;
-                width: 150px;
-            }
-            section.secaoCursos ul li.secaoCursos__items h3.secaoCursos__h3{
-                color:#303030;
-            }
-            section.secaoCursos ul li.secaoCursos__items p.secaoCursos__p{}
-
 
     /* SEÇÃO CALENDARIO */
     section.secaoCalendar{
         margin-top: 100px;
-        height: 1750px;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        padding: 0px 65px;
     }
 
-        section.secaoCalendar h2{
-            font-size: 24px;
-            color: #303030;
+        section.secaoCalendar h2.secaoCalendar__title{
+            font-family: var(--font-title_and_text);
+            font-size: 28px;
+            color: var(--color-secondary);
         }
-        section.secaoCalendar p{
-            color: #303030;
+        section.secaoCalendar p.secaoCalendar__text{
+            font-family: var(--font-title_and_text);
+            padding: 0px 20px;
+            color: var(--color-secondary);
+            font-size: 19px;
+            margin: 30px 0px 10px;
         }
 
         /* LISTA CALENDÁRIO */
@@ -143,64 +126,72 @@ main{}
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 1600px;
+            height: 1900px;
             justify-content: space-evenly;
         }
 
             /* DIAS DO CALENDÁRIO */
             section.secaoCalendar ul.calendario li{
-                border: 2px solid #00043e;
-                width: 280px;
-                height: 480px;
+                border: 1px solid var(--color-primary-dark);
+                width: 230px;
+                height: 560px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
             }
                 span.calendario__data{
+                    font-family: var(--font-title_and_text);
                     height: 120px;
                     width: 100%;
-                    background-color: #00043e;
-                    color: #fff;
+                    background-color: var(--color-primary-dark);
+                    color: var(--color-primary);
                     font-size: 36px;
                     display: block;
                     line-height: 120px;
                 }
                 section.secaoCalendar ul.calendario li h3{
+                    font-family: var(--font-title_and_text);
                     font-weight: normal;
-                    font-size: 19px;
-                    color: #303030;
+                    font-size: 25px;
+                    color: var(--color-secondary);
                 }
-                section.secaoCalendar ul.calendario li p{
+                section.secaoCalendar ul.calendario li p.calendario__text{
+                    font-family: var(--font-title_and_text);
                     font-size: 15px;
-                    color: #818181;
+                    color: var(--color-secondary-light) ;
+                    width: 200px;
+                    line-height: 23px;
                 }
                 div.calendario__data__rodape{
-                    border-top: 1px solid #818181;
+                    border-top: 1px solid var(--color-secondary-light);
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     width: 100%;
+                    padding-top: 25px;
                 }
                     span.calendario__data__rodape__hour{
-                        font-size: 22px;
-                        color: #303030;
+                        font-family: var(--font-title_and_text);
+                        font-size: 36px;
+                        color: var(--color-secondary-light);
                     }
                     button.calendario__data__rodape__button{
+                        font-family: var(--font-title_and_text);
                         font-size: 22px;
                         width: 190px;
                         height: 43px;
                         box-sizing: border-box;
                         border: none;
-                        background-color: #007aff;
-                        color: #fff;
+                        background-color: var(--color-primary-light);
+                        color: var(--color-primary);
                         border-radius: 7px;
                         margin: 18px;
                     } 
 
     /* SEÇÃO CONTATO */
     section.secaoContato{
-        background-color: #818181;
+        background-color: var(--color-secondary-light);
     }
 
 /* INICIAL */
