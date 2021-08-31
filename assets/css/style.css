@@ -381,7 +381,7 @@ div.large-container {
         right: 0;
         bottom: 0;
         background-color: #F6F6F6;
-        transform: scaleX(2);
+        transform: scaleX(1.5);
         z-index: -1;
     }
     .secao-sobre__button {
