@@ -58,7 +58,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 
 .contact-h2{
     text-transform: uppercase;
-    color: black;
+    color: #303030;
  
 }
 
@@ -159,5 +159,6 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 20px;
 }
 }
