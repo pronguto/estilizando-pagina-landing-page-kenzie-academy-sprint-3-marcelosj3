@@ -1,29 +1,4 @@
 
-/*
-Theme Name: Landing Page Kenzie Academy
-Theme URI: https://kenzie.com.br/
-Author: Kenzie Academy 
-Author URI: https://kenzie.com.br/
-Description: Descrção do thema.
-Version: 1.0
-Text Domain: https://kenzie.com.br/
-
---------------------------------------------
-ESTRUTURAÇÃO BASE
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** ESTILOS GERAIS
-**** BODY
-**** HEADER
-**** FOOTER
-**** PÁGINA INICIAL
-**** EXTRAS
-**** @MEDIA
-
-family=Montserrat -> Menus
-family=Lato -> Títulos, textos
-*/
-
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* FONTS */
@@ -45,26 +20,8 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     box-sizing: border-box;
     font-family: sans-serif;
     list-style: none;
-}
-div.flex{
-    display: flex;
-    flex-direction: column;
-}
-div.full-container{
-    width: 100%;
-    max-width: 1850px;
-    margin:0 auto;
-}
-div.large-container{
-    width: 100%;
-    max-width: 1170px;
-    margin:0 auto;
-}
-div.container{
-    width: 100%;
-    max-width: 1140px;
-    margin:0 auto;
-}
+} 
+ 
 /* GERAL */
 
 
@@ -443,6 +400,113 @@ button.calendario__data__rodape__button{
     margin: 18px;
 }
 
+/* SEÇÃO CONTATO */
+   .secaoContato{
+    padding: 40px;
+    font-size: 15px;
+    color: #818181;
+     background-color: #F6F6F6
+}
+
+.flex{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     flex-grow: 1;
+   
+     
+}
+
+.list-especification{
+    margin-left: 0;
+    text-decoration: auto;
+    color: #818181;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    line-height: 35px;
+}
+
+.flex-col{
+    justify-content: center;
+}
+
+.secaoContato-informacoes{
+    line-height: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secaoContato-informacoes--p{
+    padding-left: 50px;
+    width: 282px;
+}
+
+.contact-h2{
+    text-transform: uppercase;
+    color: #303030;
+ 
+}
+
+.form-input-model{
+    padding: 8px;
+}
+
+.flex-col--label{
+    display: none;
+}
+
+.input-size{
+    padding: 10px;
+    border-radius: 4%;
+    border-width:  1px;
+    border-style: double;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form-comment{
+    padding: 10px;
+    border-radius: 4%;
+    border-width: 1px;
+    width: 199px;
+    height: 120px;
+    border-style: double;
+}
+
+.form-submit{
+    padding: 7px;
+    max-width: 50px;
+    border-radius: 13%;
+    border-width: 1px;
+    border-style: double;
+    background-color: white;
+    margin-right: 8px;
+}
+
+img.icon-contact{
+    max-height: 1.6rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+
+}
+
+.decoration{
+    display: none;
+}
+
+
 @media screen and (min-width: 1000px) {
     /****** CABEÇALHO ******/
     div.large-container {
@@ -624,5 +688,57 @@ button.calendario__data__rodape__button{
         color: var(--color-primary);
         border-radius: 7px;
         margin: 18px;
+    }
+
+    /* SEÇÃO CONTATO */
+    .secaoContato{
+        position: relative;
+        background-color: #F6F6F6;
+    }
+
+    .secaoContato-informacoes{
+        margin-bottom: 34px;
+    }
+    .secaoContato-informacoes--p{
+        margin-left: -17px;
+        flex-wrap: wrap;
+    }
+        
+    .flex{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+    }
+
+    .flex-col{
+        margin-top: 25px;
+    }
+    .contact-h2{
+        position: absolute;
+        right: 44%;
+        top: 10%;
+        transform: translateX(50%);
+        color: #303030;
+    }
+
+    form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 450px;
+        justify-content: flex-end;
+        margin-left: 157px;
+    }
+    .form-comment{
+        width: 417px;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .decoration{
+        display: flex;
     }
 }
