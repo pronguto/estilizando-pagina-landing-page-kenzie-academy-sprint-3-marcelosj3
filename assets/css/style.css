@@ -159,6 +159,6 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 50px 0;
 }
 }
