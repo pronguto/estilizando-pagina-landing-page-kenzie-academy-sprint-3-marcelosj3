@@ -19,6 +19,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     padding: 40px;
     font-size: 15px;
     color: #818181;
+     background-color: #F6F6F6
 }
 
 .flex{
@@ -108,7 +109,14 @@ img.icon-contact{
 }
 
 footer{
-     display: none; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px 0;
+
+}
+.decoration{
+    display: none;
 }
 
 /* MEDIA QUERIES */
@@ -160,5 +168,8 @@ footer{
     align-items: center;
     flex-direction: column;
     padding-top: 50px 0;
+}
+.decoration{
+    display: flex;
 }
 }
