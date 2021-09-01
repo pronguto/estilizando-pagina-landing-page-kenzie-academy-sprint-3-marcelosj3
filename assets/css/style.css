@@ -116,6 +116,7 @@ footer{
 
 .secaoContato{
     position: relative;
+    background-color: #F6F6F6;
 }
 
 .secaoContato-informacoes{
@@ -137,70 +138,26 @@ footer{
 }
 .contact-h2{
     position: absolute;
-    right: 47%;
+    right: 44%;
     top: 10%;
     transform: translateX(50%);
+    color: #303030;
 }
 
 form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 67%;
+    width: 450px;
     justify-content: flex-end;
     margin-left: 157px;
 }
 .form-comment{
     width: 417px;
 }
-}
-@media (min-width: 1440px){
-
-.secaoContato{
-    position: relative;
-}
-
-.secaoContato-informacoes{
-    margin-bottom: 34px;
- }
-.secaoContato-informacoes--p{
-    margin-left: 87px;
-    flex-wrap: wrap;
-}
-    
-.flex{
+footer{
     display: flex;
-    flex-direction:row;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-.flex-col{
-    margin-top: 25px;
-}
-.contact-h2{
-    position: absolute;
-    right: 50%;
-    top: 10%;
-    transform: translateX(50%);
-}
-
-form{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: flex-end;
-    margin-left: 157px;
-}
-.form-comment{
-    width: 417px;
-}
-}
-@media(min-width: 1920px){
-    form{
-        width: 40%;
-    }
-    .contact-h2{
-        right: 54%;
-    }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,30 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Landing Page Kenzie Academy</title>
 </head>
+
 <body>
-  
+
   <!-- CABEÇALHO -->
   <header class="topo" id="backTop">
 
     <div class="large-container">
       <!-- LOGO -->
-      <figure>
-        <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
-        <figcaption>Logo Kenzie Academy</figcaption>  
+      <figure class="topo__figure">
+        <img class="topo__image" src="assets/img/logo.svg" alt="Logo Kenzie Academy">
+        <figcaption class="topo__caption">Logo Kenzie Academy</figcaption>
       </figure>
 
+
       <!-- MENU DE NAVEGAÇÃO -->
-      <nav>
-        <ul>
-          <li><a href="#1">Sobre a Kenzie</a></li>
-          <li><a href="#2">Agenda</a></li>
-          <li><a href="#3">Contato</a></li>
+      <nav class="topo__nav-mobile">
+        <img src="./assets/img/menu.png" alt="menu bar" class="nav-mobile__image">
+      </nav>
+
+      <nav class="topo__nav">
+        <ul class="topo__list">
+          <li class="topo__item"><a class="topo__link" href="#1">Sobre a Kenzie</a></li>
+          <li class="topo__item"><a class="topo__link" href="#2">Agenda</a></li>
+          <li class="topo__item"><a class="topo__link" href="#3">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -36,124 +43,142 @@
   <main class="inicial">
 
     <!-- ÁREA DE DESTAQUE -->
-    <section class="secaoDestaque">
+    <section class="secao-destaque">
 
-      <h2>Lorem ipsum dolor sit Python</h2>
-      <p>100% Online</p>
+      <h2 class="secao-destaque__title">Lorem ipsum dolor sit Python</h2>
+      <p class="secao-destaque__paragraph">100% Online</p>
 
       <!-- FORMULÁRIO -->
-      <div class="secaoDestaqueFormulario">
-        <input type="email"  placeholder="E-mail" required>
-        <button type="button">Subscribe</button>
+      <div class="secao-destaque__form">
+        <input class="secao-destaque__input" type="email" placeholder="E-mail" required>
+        <button class="secao-destaque__button" type="button">Subscribe</button>
       </div>
 
     </section>
 
     <!-- SEÇÃO SOBRE -->
-    <section class="secaoSobre">
+    <section class="secao-sobre">
 
-      <article class="flex">
-        
+      <article class="secao-sobre__article">
+
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="secao-sobre__column ">
 
-          <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
+          <h2 class="secao-sobre__title">LOREM IPSUM DOLOR SIT PYTHON</h2>
+          <p class="secao-sobre__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti
+            incidunt nam quibusdam fugit
+            reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus
+            commodi tenetur dolorum ipsa sequi.
           </p>
 
-          <span>Consectetur adipisicing elit 5 Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam.</span>
+          <span class="secao-sobre__span">Consectetur adipisicing elit 5 Suscipit deleniti incidunt nam quibusdam fugit
+            reprehenderit
+            aperiam.</span>
 
-          <button>Subscribe</button>
+          <button class="secao-sobre__button">Subscribe</button>
 
         </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="secao-sobre__column secao-sobre__column--center-image secao-sobre__column--padding-1">
 
-          <figure>
-            <img src="assets/img/python.png" alt="python">
-            <figcaption>python</figcaption>  
-          </figure>      
+          <figure class="secao-sobre__figure">
+            <img class="secao-sobre__image" src="assets/img/python.png" alt="python">
+            <figcaption class="secao-sobre__caption">python</figcaption>
+          </figure>
 
         </div>
 
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div
+          class="secao-sobre__column secao-sobre__column--center-image secao-sobre__column--padding-2 secao-sobre__column--background">
 
-            <figure>
-              <img src="assets/img/JavaScript-logo.png" alt="Java Script">
-              <figcaption>Java Script</figcaption>  
-            </figure>      
-  
-          </div>
-
-        <!-- COLUNA DIREITA -->
-        <div class="flex-col">
-
-            <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
-            <ul>
-                <li>The standard Lorem Ipsum passage, used since the 1500s</li>
-                <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
-                <li>Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
-            </ul>
+          <figure class="secao-sobre__figure">
+            <img class="secao-sobre__image" src="assets/img/JavaScript-logo.png" alt="Java Script">
+            <figcaption class="secao-sobre__caption">Java Script</figcaption>
+          </figure>
 
         </div>
 
-        
+        <!-- COLUNA DIREITA -->
+        <div class="secao-sobre__column secao-sobre__column--background">
+
+          <h2 class="secao-sobre__title secao-sobre__title--center-bolder"> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
+          <ul class="secao-sobre__list">
+            <li class="secao-sobre__item">The standard Lorem Ipsum passage, used since the 1500s</li>
+            <li class="secao-sobre__item">Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
+            <li class="secao-sobre__item">1914 translation by H. Rackham</li>
+            <li class="secao-sobre__item">Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
+            <li class="secao-sobre__item">1914 translation by H. Rackham</li>
+          </ul>
+
+        </div>
+
+
 
       </article>
 
     </section>
 
     <!-- SEÇÃO CURSOS -->
-    <section class="secaoCursos">
+    <section class="secao-cursos">
 
-      <article>
+      <article class="secao-cursos__article">
 
-        <h2>COURSES</h2>
-        <p>What we offer</p>
+        <h2 class="secao-cursos__title">COURSES</h2>
+        <p class="secao-cursos__paragraph">What we offer</p>
 
         <!-- LISTA DE CURSOS -->
-        <ul>
-        
-          <li>
-            <img src="assets/img/html-css.png" alt="">
-            <h3>Html/Css</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+        <ul class="secao-cursos__list">
+
+          <li class="secao-cursos__item secao-cursos__item--start">
+            <figure class="secao-cursos__figure">
+              <img class="secao-cursos__image" src="assets/img/html-css.png" alt="">
+            </figure>
+            <h3 class="secao-cursos__item-title">Html/Css</h3>
+            <p class="secao-cursos__item-paragraph">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
 
-          <li>
-            <img src="assets/img/js.png" alt="">
-            <h3>JavaScript</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <li class="secao-cursos__item">
+            <figure class="secao-cursos__figure">
+              <img class="secao-cursos__image" src="assets/img/js.png" alt="">
+            </figure>
+            <h3 class="secao-cursos__item-title">JavaScript</h3>
+            <p class="secao-cursos__item-paragraph">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
 
-          <li>
-            <img src="assets/img/react.png" alt="">
-            <h3>React</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <li class="secao-cursos__item secao-cursos__item--end">
+            <figure class="secao-cursos__figure">
+              <img class="secao-cursos__image" src="assets/img/react.png" alt="">
+            </figure>
+            <h3 class="secao-cursos__item-title">React</h3>
+            <p class="secao-cursos__item-paragraph">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
 
-          <li>
-            <img src="assets/img/py.webp" alt="">
-            <h3>Python</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <li class="secao-cursos__item secao-cursos__item--start">
+            <figure class="secao-cursos__figure">
+              <img class="secao-cursos__image" src="assets/img/py.webp" alt="">
+            </figure>
+            <h3 class="secao-cursos__item-title">Python</h3>
+            <p class="secao-cursos__item-paragraph">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
 
-          <li>
-            <img src="assets/img/dj.png" alt="">
-            <h3>Django</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <li class="secao-cursos__item">
+            <figure class="secao-cursos__figure">
+              <img class="secao-cursos__image" src="assets/img/dj.png" alt="">
+            </figure>
+            <h3 class="secao-cursos__item-title">Django</h3>
+            <p class="secao-cursos__item-paragraph">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
 
-          <li>
-            <img src="assets/img/multitasking.svg" alt="">
-            <h3 style="color:#303030;">Soft Skills</h3>
-            <p>The standard Lorem Ipsum passage,<br> used since the 1500s</p>
+          <li class="secao-cursos__item secao-cursos__item--end">
+            <figure class="secao-cursos__figure">
+              <img class="secao-cursos__image" src="assets/img/multitasking.svg" alt="">
+            </figure>
+            <h3 class="secao-cursos__item-title">Soft Skills</h3>
+            <p class="secao-cursos__item-paragraph">The standard Lorem Ipsum passage,<br> used since the 1500s</p>
           </li>
-          
+
         </ul>
 
       </article>
@@ -162,39 +187,48 @@
 
     <section class="secaoCalendar">
 
-      <h2>SCHEDULE</h2>
-      <p>Lorem ipsum dolor sit schedule</p>
+      <h2 class="secaoCalendar__title">SCHEDULE</h2>
+      <p class="secaoCalendar__text">Lorem ipsum dolor sit schedule</p>
 
       <!-- LISTA CALENDÁRIO -->
       <ul class="calendario">
 
         <li>
-          <span class="calendario-data">22/02</span>
+          <span class="calendario__data">22/02</span>
           <h3>HTML/CSS</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
-          <div class="calendario-data-rodape">
-            <span>7mp</span>
-            <button>Sign Up</button>
+          <p class="calendario__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae
+            commodi sed eos repellendus
+            adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis
+            explicabo!</p>
+          <div class="calendario__data__rodape">
+            <span class="calendario__data__rodape__hour">7pm</span>
+            <button class="calendario__data__rodape__button">Sign Up</button>
           </div>
         </li>
 
         <li>
-          <span class="calendario-data">23/02</span>
+          <span class="calendario__data">23/02</span>
           <h3>JavaScript</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
-          <div class="calendario-data-rodape">
-            <span>7mp</span>
-            <button>Sign Up</button>
+          <p class="calendario__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae
+            commodi sed eos repellendus
+            adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis
+            explicabo!</p>
+          <div class="calendario__data__rodape">
+            <span class="calendario__data__rodape__hour">7pm</span>
+            <button class="calendario__data__rodape__button">Sign Up</button>
           </div>
         </li>
 
         <li>
-          <span class="calendario-data">24/02</span>
+          <span class="calendario__data">24/02</span>
           <h3>Python</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
-          <div class="calendario-data-rodape">
-            <span>7mp</span>
-            <button>Sign Up</button>
+          <p class="calendario__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae
+            commodi sed eos repellendus
+            adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis
+            explicabo!</p>
+          <div class="calendario__data__rodape">
+            <span class="calendario__data__rodape__hour">7pm</span>
+            <button class="calendario__data__rodape__button">Sign Up</button>
           </div>
         </li>
 
@@ -202,27 +236,32 @@
 
     </section>
 
+    <!-- SEÇÃO CONTATO -->
+
     <section class="secaoContato">
 
       <div class="flex">
 
         <!-- COLUNA LADO ESQUERDO -->
+         <div>
+              <h2 class="contact-h2">Contact</h2>
+          </div>
         <div class="flex-col">
-            
+
           <div class="secaoContato-informacoes">
-                 <h2 class="secaoContato-informacoes--contact">Contact</h2>
+    
             <p class="secaoContato-informacoes--p">Contact us and we'll get back to you within 24 hours.</p>
-            
+
             <ul class="contact-list--organization">
-              <li><a class="list-especification" href="#">Chicago, US  
-                <img class="icon-contact" src="assets/img/placeholder.png">
-              </a> </li>
+              <li><a class="list-especification" href="#">Chicago, US
+                  <img class="icon-contact" src="assets/img/placeholder.png">
+                </a> </li>
               <li><a class="list-especification" href="tel:001515151515">+00 1515151515
-                <img class="icon-contact"src="assets/img/smartphone.png">
-              </a></li>
+                  <img class="icon-contact" src="assets/img/smartphone.png">
+                </a></li>
               <li><a class="list-especification" href="malito:myemail@something.com">myemail@something.com
-                <img class="icon-contact"src="assets/img/email.png">
-              </a></li>
+                  <img class="icon-contact" src="assets/img/email.png">
+                </a></li>
             </ul>
 
           </div>
@@ -230,8 +269,9 @@
         </div>
 
         <!-- COLUNA LADO DIRETO -->
+
         <div class="flex-col">
-          
+
           <form action="">
 
             <div class="form-input-model">
@@ -246,7 +286,7 @@
 
             <div class="form-input-model">
               <label class="flex-col--label" for="mensagem">Comment</label>
-              <textarea  class="form-comment" name="mensagem" placeholder="Comment" id="mensagem"></textarea>
+              <textarea class="form-comment" name="mensagem" placeholder="Comment" id="mensagem"></textarea>
             </div>
 
             <input class="form-submit" type="submit" value="Send">
@@ -260,29 +300,30 @@
     </section>
 
   </main>
-        
+
   <footer>
-       <a  href="#backTop">
-       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
-      style=" fill:#000000;"><a href="#topo"> </a>
-      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-        font-size="none" text-anchor="none"  style="mix-blend-mode: normal" >
-        <path d="M0,172v-172h172v172z" fill="none"></path>
-        <g fill="#007AFF">
-    
-          <path href="#topo"
-            d="M86.16125,37.84c-0.90031,0.01344 -1.76031,0.36281 -2.39187,0.99438l-72.53563,71.94437c-1.34375,1.34375 -1.35719,3.52063 -0.02687,4.86438l20.55937,20.72062c1.34375,1.35719 3.52063,1.37063 4.86438,0.02688l49.36937,-48.96625l48.96625,49.36937c1.34375,1.34375 3.52063,1.35719 4.86438,0.01344l20.72062,-20.54594c0.65844,-0.645 1.02125,-1.51844 1.02125,-2.43219c0.01344,-0.91375 -0.34937,-1.78719 -0.99437,-2.44563l-71.94438,-72.52219c-0.65844,-0.67187 -1.54531,-1.03469 -2.4725,-1.02125z">
-          </path>
+    <a href="#backTop">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
+        style=" fill:#000000;"><a href="#topo"> </a>
+        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+          stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+          font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+          <path d="M0,172v-172h172v172z" fill="none"></path>
+          <g fill="#007AFF">
+
+            <path href="#topo"
+              d="M86.16125,37.84c-0.90031,0.01344 -1.76031,0.36281 -2.39187,0.99438l-72.53563,71.94437c-1.34375,1.34375 -1.35719,3.52063 -0.02687,4.86438l20.55937,20.72062c1.34375,1.35719 3.52063,1.37063 4.86438,0.02688l49.36937,-48.96625l48.96625,49.36937c1.34375,1.34375 3.52063,1.35719 4.86438,0.01344l20.72062,-20.54594c0.65844,-0.645 1.02125,-1.51844 1.02125,-2.43219c0.01344,-0.91375 -0.34937,-1.78719 -0.99437,-2.44563l-71.94438,-72.52219c-0.65844,-0.67187 -1.54531,-1.03469 -2.4725,-1.02125z">
+            </path>
+          </g>
         </g>
-      </g>
-    </svg>
-  </a>
+      </svg>
+    </a>
     <p class="decoration">Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
   </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
 
 
