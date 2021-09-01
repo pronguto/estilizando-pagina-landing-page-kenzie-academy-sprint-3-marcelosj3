@@ -49,6 +49,7 @@ h2 {
     background-color: var(--color-primary-dark);
     padding: 20px;
 }
+
 div.large-container {
     width: 100%;
     max-width: 1170px;
@@ -58,16 +59,15 @@ div.large-container {
 }
 
 /* LOGO */
-.topo__figure {}
 .topo__image {
     width: 60px;
 }
+
 .topo__caption {
     display: none;
 }
 
 /* MENU DE NAVEGAÇÃO */
-.topo__nav-mobile {}
 .nav-mobile__image {
     cursor: pointer;
     width: 25px;
@@ -76,9 +76,6 @@ div.large-container {
 .topo__nav {
     display: none;
 }
-.topo__list {}
-.topo__item {}
-.topo__link {}
 
 /****** PÁGINA INICIAL ******/
 .inicial {}
@@ -93,10 +90,12 @@ div.large-container {
     text-align: center;
     margin-bottom: 100px;
 }
+
 .secao-destaque__title {
     font-size: 2rem;
     font-weight: 400;
 }
+
 .secao-destaque__paragraph {
     font-family: 'Montserrat';
     font-size: 21px;
@@ -109,6 +108,7 @@ div.large-container {
     display: flex;
     justify-content: center;
 }
+
 .secao-destaque__input {
     width: 100%;
     font-family: 'Montserrat';
@@ -119,19 +119,23 @@ div.large-container {
     transition: .3s all;
     box-sizing: border-box;
 }
+
 .secao-destaque__input:focus {
     color: var(--color-primary);
     background-color: var(--color-primary-light);
     border: 1px solid var(--color-primary);
     border-right: none;
 }
+
 .secao-destaque__input:focus ~ .secao-destaque__button {
     color: var(--color-secondary-light);
     background-color: var(--color-primary);
 }
+
 .secao-destaque__input:focus::-webkit-input-placeholder {
     color: var(--color-primary);
 }
+
 .secao-destaque__button {
     font-family: 'Montserrat';
     font-size: 14px;
@@ -145,6 +149,7 @@ div.large-container {
     transition: .3s all;
     box-sizing: border-box;
 }
+
 .secao-destaque__form .secao-destaque__button:hover {
     color: var(--color-primary);
     background-color: var(--color-primary-dark);
@@ -156,47 +161,55 @@ div.large-container {
 .secao-sobre {
     font-size: 15px;
 }
-.secao-sobre__article {}
 
 /* COLUNA ESQUERDA */
 .secao-sobre__column {
     padding: 0 65px 0;
 }
+
 .secao-sobre__column--center-image {
     display: flex;
     justify-content: center;
 }
+
 .secao-sobre__column--padding-1 {
     margin: 0;
     padding: 50px 65px 75px;
 }
+
 .secao-sobre__column--padding-2 {
     margin: 0;
     padding: 75px 65px 15px;
 }
+
 .secao-sobre__column--background {
     background-color: #F6F6F6;
 }
+
 .secao-sobre__title {
     color: var(--color-secondary);
     font-size: 22px;
     margin-bottom: 100px;
     font-weight: 600;
 }
+
 .secao-sobre__title--center-bolder {
     text-align: center;
     font-weight: 700;
 }
+
 .secao-sobre__paragraph {
     color: var(--color-secondary);
     font-size: 19px;
     margin-bottom: 50px;
 }
+
 .secao-sobre__span {
     display: block;
     margin-bottom: 50px;
     line-height: 25px;
 }
+
 .secao-sobre__button {
     width: 100%;
     font-family: 'Lato';
@@ -210,6 +223,7 @@ div.large-container {
     cursor: pointer;
     transition: .3s all;
 }
+
 .secao-sobre__button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -224,10 +238,12 @@ div.large-container {
     display: flex;
     justify-content: center;
 }
+
 .secao-sobre__image {
     width: 100%;
     object-fit: cover;
 }
+
 .secao-sobre__caption {
     display: none;
 }
@@ -237,6 +253,7 @@ div.large-container {
     list-style-type: disc;
     padding: 0 0 50px 50px;
 }
+
 .secao-sobre__item {
     font-family: 'Lato';
     font-size: 19px;
@@ -249,9 +266,11 @@ div.large-container {
     padding: 50px 65px;
     font-size: 15px;
 }
+
 .secao-cursos__article {
     text-align: center;
 }
+
 .secao-cursos__title {
     font-family: 'Lato';
     font-size: 1.6rem;
@@ -259,6 +278,7 @@ div.large-container {
     color: var(--color-secondary);
     margin-bottom: 25px;
 }
+
 .secao-cursos__paragraph {
     font-family: 'Montserrat';
     font-size: 19px;
@@ -271,6 +291,7 @@ div.large-container {
     text-align: center;
     margin-top: 50px;
 }
+
 .secao-cursos__item {
     display: flex;
     justify-content: center;
@@ -278,6 +299,7 @@ div.large-container {
     flex-direction: column;
     margin-bottom: 20px;
 }
+
 .secao-cursos__figure {
     width: 100px;
     height: 100px;
@@ -286,10 +308,12 @@ div.large-container {
     margin-bottom: 10px;
     
 }
+
 .secao-cursos__image {
     width: 100%;
     object-fit: scale-down;
 }
+
 .secao-cursos__item-title {
     font-family: 'Lato';
     font-size: 19px;
@@ -297,13 +321,14 @@ div.large-container {
     color: var(--color-secondary);
     margin-bottom: 30px;
 }
+
 .secao-cursos__item-paragraph {
     font-family: 'Lato';
     line-height: 25px;
 }
 
 /* SEÇÃO CALENDARIO */
-section.secaoCalendar{
+section.secaoCalendar {
     margin-top: 100px;
     text-align: center;
     display: flex;
@@ -313,12 +338,13 @@ section.secaoCalendar{
     padding: 0px 65px;
 }
 
-section.secaoCalendar h2.secaoCalendar__title{
+section.secaoCalendar h2.secaoCalendar__title {
     font-family: var(--font-title_and_text);
     font-size: 28px;
     color: var(--color-secondary);
 }
-section.secaoCalendar p.secaoCalendar__text{
+
+section.secaoCalendar p.secaoCalendar__text {
     font-family: var(--font-title_and_text);
     padding: 0px 20px;
     color: var(--color-secondary);
@@ -327,7 +353,7 @@ section.secaoCalendar p.secaoCalendar__text{
 }
 
 /* LISTA CALENDÁRIO */
-section.secaoCalendar ul.calendario{
+section.secaoCalendar ul.calendario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,7 +362,7 @@ section.secaoCalendar ul.calendario{
 }
 
 /* DIAS DO CALENDÁRIO */
-section.secaoCalendar ul.calendario li{
+section.secaoCalendar ul.calendario li {
     border: 1px solid var(--color-primary-dark);
     width: 230px;
     height: 560px;
@@ -346,7 +372,7 @@ section.secaoCalendar ul.calendario li{
     justify-content: space-between;
 }
 
-span.calendario__data{
+span.calendario__data {
     font-family: var(--font-title_and_text);
     height: 120px;
     width: 100%;
@@ -357,14 +383,14 @@ span.calendario__data{
     line-height: 120px;
 }
 
-section.secaoCalendar ul.calendario li h3{
+section.secaoCalendar ul.calendario li h3 {
     font-family: var(--font-title_and_text);
     font-weight: normal;
     font-size: 25px;
     color: var(--color-secondary);
 }
 
-section.secaoCalendar ul.calendario li p.calendario__text{
+section.secaoCalendar ul.calendario li p.calendario__text {
     font-family: var(--font-title_and_text);
     font-size: 15px;
     color: var(--color-secondary-light) ;
@@ -372,7 +398,7 @@ section.secaoCalendar ul.calendario li p.calendario__text{
     line-height: 25px;
 }
 
-div.calendario__data__rodape{
+div.calendario__data__rodape {
     border-top: 1px solid var(--color-secondary-light);
     display: flex;
     align-items: center;
@@ -381,13 +407,13 @@ div.calendario__data__rodape{
     padding-top: 25px;
 }
 
-span.calendario__data__rodape__hour{
+span.calendario__data__rodape__hour {
     font-family: var(--font-title_and_text);
     font-size: 36px;
     color: var(--color-secondary-light);
 }
 
-button.calendario__data__rodape__button{
+button.calendario__data__rodape__button {
     font-family: var(--font-title_and_text);
     font-size: 22px;
     width: 190px;
@@ -400,24 +426,28 @@ button.calendario__data__rodape__button{
     margin: 18px;
 }
 
+button.calendario__data__rodape__button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--color-primary-dark);
+}
+
 /* SEÇÃO CONTATO */
    .secaoContato{
     padding: 40px;
     font-size: 15px;
     color: #818181;
-     background-color: #F6F6F6
+    background-color: #F6F6F6;
 }
 
-.flex{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     flex-grow: 1;
-   
-     
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
 }
 
-.list-especification{
+.list-especification {
     margin-left: 0;
     text-decoration: auto;
     color: #818181;
@@ -427,51 +457,49 @@ button.calendario__data__rodape__button{
     line-height: 35px;
 }
 
-.flex-col{
+.flex-col {
     justify-content: center;
 }
 
-.secaoContato-informacoes{
+.secaoContato-informacoes {
     line-height: 29px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.secaoContato-informacoes--p{
+.secaoContato-informacoes--p {
     padding-left: 50px;
     width: 282px;
 }
 
-.contact-h2{
+.contact-h2 {
     text-transform: uppercase;
     color: #303030;
- 
 }
 
-.form-input-model{
+.form-input-model {
     padding: 8px;
 }
 
-.flex-col--label{
+.flex-col--label {
     display: none;
 }
 
-.input-size{
+.input-size {
     padding: 10px;
     border-radius: 4%;
     border-width:  1px;
     border-style: double;
-    
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.form-comment{
+.form-comment {
     padding: 10px;
     border-radius: 4%;
     border-width: 1px;
@@ -480,7 +508,7 @@ form{
     border-style: double;
 }
 
-.form-submit{
+.form-submit {
     padding: 7px;
     max-width: 50px;
     border-radius: 13%;
@@ -490,19 +518,18 @@ form{
     margin-right: 8px;
 }
 
-img.icon-contact{
+img.icon-contact {
     max-height: 1.6rem;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 50px 0;
-
 }
 
-.decoration{
+.decoration {
     display: none;
 }
 
@@ -518,15 +545,19 @@ footer{
     .topo__nav-mobile {
         display: none;
     }
+
     .topo__nav {
         display: block;
     }
+
     .topo__list {
         display: flex;
     }
+
     .topo__item {
         margin-left: 20px;
     }
+
     .topo__link {
         font-family: 'Montserrat';
         font-size: 13px;
@@ -535,6 +566,7 @@ footer{
         color: var(--color-primary);
         transition: .3s all;
     }
+
     .topo__link::after {
         display: block;
         content: '';
@@ -542,10 +574,12 @@ footer{
         transform: scaleX(0);
         transition: .3s all;
     }
+
     .topo__link:hover::after {
         transform: scaleX(1);
         transform-origin: center;
     }
+
     /****** PÁGINA INICIAL ******/
 
     /*** ÁREA DE DESTAQUE ***/
@@ -555,6 +589,7 @@ footer{
         background-position: right;
         padding: 150px;
     }
+
     .secao-destaque__title {
         font-size: 63px;
     }
@@ -571,6 +606,7 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .secao-sobre__column {
         width: 40%;
         height: 600px;
@@ -582,16 +618,19 @@ footer{
         padding: 100px 0;
         text-align: left;
     }
+
     .secao-sobre__column--center-image {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .secao-sobre__column--padding-1,
     .secao-sobre__column--padding-2 {
         margin: 0;
         padding: 0;
     }
+
     .secao-sobre__column--background::after {
         content: "";
         position: absolute;
@@ -603,14 +642,17 @@ footer{
         transform: scaleX(1.5);
         z-index: -1;
     }
+
     .secao-sobre__title {
         font-size: 24px;
         margin-bottom: 100px;
     }
+
     .secao-sobre__button {
         width: auto;
         align-self: start;
     }
+
     .secao-sobre__figure {
         width: 400px;
         height: 400px;
@@ -619,12 +661,9 @@ footer{
     }
 
     /*** SEÇÃO CURSOS ***/
-    .secao-cursos {}
-    .secao-cursos__article {}
     .secao-cursos__title {
         font-size: 19px;
     }
-    .secao-cursos__paragraph {}
 
     /* LISTA DE CURSOS */
     .secao-cursos__list {
@@ -632,34 +671,37 @@ footer{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+
     .secao-cursos__item {
         margin-bottom: 50px;
     }
+
     .secao-cursos__item--start {
         justify-self: start;
     }
+
     .secao-cursos__item--end {
         justify-self: end;
     }
-    .secao-cursos__figure {}
-    .secao-cursos__image {}
+
     .secao-cursos__item-title {
         font-size: 15px;
     }
+
     .secao-cursos__item-paragraph {
         font-size: 15px;
     }
 
-    section.secaoCalendar ul.calendario{
+    section.secaoCalendar ul.calendario {
         display: flex;
         flex-direction: row;
         align-items: center;
         height: 650px;
         width: 1000px;
-        justify-content: space-between ;
+        justify-content: space-between;
     }
 
-    section.secaoCalendar ul.calendario li{
+    section.secaoCalendar ul.calendario li {
         border: 1px solid var(--color-primary-dark);
         width: 320px;
         height: 560px;
@@ -669,15 +711,15 @@ footer{
         justify-content: space-between;
     }
 
-    section.secaoCalendar ul.calendario li p.calendario__text{
+    section.secaoCalendar ul.calendario li p.calendario__text {
         font-family: var(--font-title_and_text);
         font-size: 15px;
-        color: var(--color-secondary-light) ;
+        color: var(--color-secondary-light);
         width: 290px;
         line-height: 25px;
     }
 
-    button.calendario__data__rodape__button{
+    button.calendario__data__rodape__button {
         font-family: var(--font-title_and_text);
         font-size: 32px;
         width: 150px;
@@ -691,29 +733,29 @@ footer{
     }
 
     /* SEÇÃO CONTATO */
-    .secaoContato{
+    .secaoContato {
         position: relative;
         background-color: #F6F6F6;
     }
 
-    .secaoContato-informacoes{
+    .secaoContato-informacoes {
         margin-bottom: 34px;
     }
-    .secaoContato-informacoes--p{
+    .secaoContato-informacoes--p {
         margin-left: -17px;
         flex-wrap: wrap;
     }
         
-    .flex{
+    .flex {
         display: flex;
         flex-direction:row;
         justify-content: center;
     }
 
-    .flex-col{
+    .flex-col {
         margin-top: 25px;
     }
-    .contact-h2{
+    .contact-h2 {
         position: absolute;
         right: 44%;
         top: 10%;
@@ -721,7 +763,7 @@ footer{
         color: #303030;
     }
 
-    form{
+    form {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -729,16 +771,19 @@ footer{
         justify-content: flex-end;
         margin-left: 157px;
     }
-    .form-comment{
+
+    .form-comment {
         width: 417px;
     }
-    footer{
+
+    footer {
         display: flex;
         align-items: center;
         flex-direction: column;
         padding: 50px 0;
     }
-    .decoration{
+
+    .decoration {
         display: flex;
     }
 }
